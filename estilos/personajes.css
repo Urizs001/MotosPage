@@ -1,0 +1,50 @@
+.catalogoDePersonajes {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente el contenido */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    color: #1d0303; /* color de las letras*/
+    text-align: justify;
+}
+.catalogoDePersonajes .personajes {
+    background-color: #4a6ded; /*color de los articulos de motos*/
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    padding: 30px;
+    margin-right: 5px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.imagenes {
+    width: 30%;
+    border: 3px solid #060606; /*Color del contorno de las imagenes*/
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+}
+
+.cajaDeTexto h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 
+    -1px -1px 0 #1900ff, /* azul de las letras sombra */ 
+    1px -1px 0 #1900ff,
+    -1px 1px 0 #1900ff,
+    1px 1px 0 #1900ff; 
+    color: #000000;
+}
+
+.cajaDeTexto p{
+    margin-top: 10px;
+}
+
+.precio {
+    color: #ff0505;
+    text-decoration: underline;
+    text-decoration-style: double; 
+}
+
+

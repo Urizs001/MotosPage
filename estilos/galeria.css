@@ -1,0 +1,167 @@
+/* Código CSS de la galeria de motos*/
+
+/* Estilo para las imágenes */
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%; /* Cambiado a 100% para evitar imágenes más grandes que el contenedor */
+}
+
+.contenedor-flexible {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galeria__img {
+    object-fit: cover;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.column--50-25 {
+    width: 24.5%;
+}
+
+.galeria__img:hover {
+    transform: scale(1.05);
+}
+
+.galeria__img--grande {
+    height: 450px;
+}
+
+.galeria__img--chica {
+    height: 250px;
+}
+
+/* Estilo del modal */
+.modal {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000ee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Añadido para centrar el texto */
+}
+
+
+/* Estilo del botón de cerrar  x*/
+.modal_boton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: #d50e0e; /*color del boton x o cerrar*/
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    background: rgb(0, 191, 255); /*color del contorno del bon x*/
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px; /* Centra verticalmente el texto dentro del botón */
+    border-radius: 50%;
+    font-family: monospace;
+}
+
+/* Función JS que permite abrir la imagen */
+.modal--open {
+    display: block;
+}
+
+/* Otros estilos */
+.Texto h2 {
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-shadow: 
+    -1px -1px 0 #1d0303, /* Negro */ 
+    1px -1px 0 #1d0303,
+    -1px 1px 0 #1d0303,
+    1px 1px 0 #1d0303; 
+    color: #080808;
+}
+
+body {
+    background-color: #343df1;
+}
+
+footer p {
+    text-shadow: 
+-1px -1px 0 #333333, /*Gris obscuro*/
+1px -1px 0 #333333,
+-1px 1px 0 #333333,
+1px 1px 0 #333333;
+color: #000000;
+
+}
+
+
+/*Efecto para cambiar de color y de sombras de los 
+iconos de fontello o de las redes sociales*/
+footer .sociales {
+    text-shadow: 
+    -1px -1px 0 #000080, /* Azul Marino */
+    1px -1px 0 #000080,
+    -1px 1px 0 #000080,
+    1px 1px 0 #000080; 
+    color: #FFFFFF; /* Blanco */
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #08283c;/*color de fondo de las imagenes*/
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__contenido {
+    background-color: #1d02ea;
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal__imagen img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.modal__texto {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.modal__texto p {
+    margin: 0;
+}
+
+
+body {
+    background-color: #4078a2; /*color de fondo de la pagina*/
+}
+
+
+
+
+
